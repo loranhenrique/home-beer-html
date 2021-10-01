@@ -39,7 +39,7 @@
 
 #introducao {
     height: 500px;
-    background-image: url(/images/imagem_introducao.png);
+    background-image: url(images/imagem_introducao.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
