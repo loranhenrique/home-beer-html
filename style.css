@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#cabecalho { 
+    list-style: none;
+    background-color: #E3D43D;
+}
+
+#cabecalho li {
+    display: inline;
+}
+
+#cabecalho li a{
+    display: inline-block;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;  
+}
+
+#cabecalho li a:hover {
+    color: #fff;
+}  
+
+#cabecalho li:first-child a {
+    margin-right: 33.5%;
+}
+
+#introducao {
+    height: 500px;
+    background-image: url(/images/imagem_introducao.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+#introducao__subtitulo {
+    padding-top: 142px;
+    padding-left: 132px;
+    font-size: 36px;
+}
+
+#introducao__titulo {
+    padding-top: 30px;
+    padding-left: 132px;
+    font-size: 72px;
+    color: #E3D43D;
+}
+
+#introducao__container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 132px;
+    width: 231px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3D43D;
+}
+
+#introducao__informacao {
+    font-size: 18px;
+}
+
+#sobre {
+    height: 480px;
+    background-image: url(images/imagem_sobre.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 380px 380px;
+}
+
+#sobre__divider {
+    padding-top: 90px;
+}
+
+#divider-01 {
+    width: 70px;
+    background-color:#E3D43D;
+    padding-top: 1px;
+    margin-left: 132px;
+}
+
+#sobre__subtitulo {
+    padding-top: 15px;
+    padding-left: 132px;
+    font-size: 32px;
+}
+
+#sobre__titulo {
+    padding-top: 15px;
+    padding-left: 132px;
+    font-size: 40px; 
+    color: #E3D43D;
+    width: 700px;
+}
+
+#sobre__container {
+    margin-top: 30px;
+    margin-left: 132px;
+    width: 621px;
+
+}
+
+#sobre__descricao {
+    font-size: 24px;
+}
+
+#comentarios {
+    display: flex;
+    height: 387px;
+    background-image: url();
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#E3D43D;
+}
+
+#comentarios__aspas {
+    background-image: url(images/aspas.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 93px;
+}
+
+#comentarios__titulo {
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+#comentarios__pessoa {
+    padding-top: 30px;
+    font-size: 24px;
+}
+
+#ferramentas {
+    display: flex;
+    height: 747px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ferramentas__container-01{
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divider-02 { 
+    width: 70px;
+    height: 1px;
+    background-color:#E3D43D;
+}
+
+#ferramentas__titulo-principal{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+#ferramentas__subtitulo{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+#ferramentas__container-02{
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#ferramentas__cervejaria, #ferramentas__comentarios, #ferramentas__parceiros, #ferramentas__favoritos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.ferramentas__icone-01,.ferramentas__icone-02,.ferramentas__icone-03,.ferramentas__icone-04{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ferramentas__icone-01{
+    background-image: url(images/icon_cerveja.png);
+}
+
+.ferramentas__icone-02{
+    background-image: url(images/icon_comentario.png);
+}
+
+.ferramentas__icone-03{
+    background-image: url(images/icon_parceiro.png);
+}
+
+.ferramentas__icone-04{
+    background-image: url(images/icon_favorito.png);
+}
+
+.ferramentas__titulo{
+    margin-top:30px;
+    font-size: 24px;
+}
+
+.ferramentas__descricao{
+    margin-top:30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.container__ilustracoes {
+    height: 552px;
+}
+
+.margem-lateral-esquerda, .conteiner-central, .margem-lateral-direita {
+    height: 100%;
+    float: left;
+}
+
+.margem-lateral-esquerda, .margem-lateral-direita {
+    width:10%;
+}
+  
+.conteiner-central {
+    position: relative;
+    z-index: 99;
+    width:80%;
+    background-color:#646464;
+    box-shadow: 0px 2px 9px 0px #545454;
+}
+
+#ilustracoes__container-01{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ilustracoes__titulo{
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+#ilustracoes__descricao{
+    margin-top: 30px;
+    font-size: 24px;
+} 
+
+#ilustracoes__container-02{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#ilustracoes__foto-01, #ilustracoes__foto-02, #ilustracoes__foto-03{
+    width: 270px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 10px;
+    box-shadow: 0px 2px 9px 0px #545454;
+}
+
+#ilustracoes__foto-01{
+    background-image: url(images/ilustracao1.jpeg);
+}
+
+#ilustracoes__foto-02{
+    background-image: url(images/ilustracao2.jpeg);
+}
+
+#ilustracoes__foto-03{
+    background-image: url(images/ilustracao3.jpeg);
+}
+
+
+.quadrado-1 {
+    height: 50%;
+}
+
+.quadrado-2 {
+    height: 50%;
+    background-color: #E3D43D;
+}
+
+.autores {
+    height: 897px;
+    background-color: #E3D43D;
+}
+
+#autores__container-01{
+    display: flex;
+    padding-top: 90px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#autores__divider{
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+}
+
+#autores__titulo{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+#autores__subtitulo{
+    margin-top:  15px;
+    font-size: 32px;
+}
+
+#autores__descricao-01{
+    margin-top: 30px;
+    font-size: 24px;
+    width: 90%;
+    text-align: center;
+}
+
+.autores__container-02{
+    display: flex;
+    padding-top: 60px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#autores__loran{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#autores__foto-01{
+    width: 270px;
+    height: 270px;
+    background-image: url(images/imagem_loran.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 9px 0px #545454;
+}
+
+
+#autores__nome-01{
+    margin-top:30px ;
+    font-size: 24px;
+}
+
+#autores__vitor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#autores__foto-02{
+    width: 270px;
+    height: 270px;
+    background-image: url(images/imagem_vitor.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 9px 0px #545454;
+}
+
+#autores__nome-02{
+    margin-top:30px ;
+    font-size: 24px;
+}
+
+#autores__container-03{
+    display: flex;
+    padding-top: 90px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#autores__icone{
+    width: 40px;
+    height: 40px;
+    background-image: url(images/icon_cerveja.png);
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#autores__descricao-02{
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 100px;
+}

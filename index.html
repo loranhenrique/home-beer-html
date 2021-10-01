@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Beer</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function scroll(id) {
+            const yOffset = -59; 
+            const element = document.querySelector(id);
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <ul id="cabecalho">
+            <li><a href="javascript: scroll('#introducao');"><img style="margin-right: 10px; width: 15px; height:15px; " src="images/icon_cerveja.png" alt="">Home Beer</a></li>
+            <li><a href="javascript: scroll('#introducao');">Home</a></li>
+            <li><a href="javascript: scroll('#sobre');">Sobre</a></li>
+            <li><a href="javascript: scroll('#comentarios');">Comentário</a></li>
+            <li><a href="javascript: scroll('#ferramentas');">Ferramentas</a></li>
+            <li><a href="javascript: scroll('.container__ilustracoes');">Ilustração</a></li>
+            <li><a href="javascript: scroll('.autores');">Desenvolvedores</a></li>
+        </ul>
+    </div>
+
+    <div id="introducao">
+        <p id="introducao__subtitulo">Cervejaria</p>
+        <h1 id="introducao__titulo">Home Beer</h1>
+        <div id="introducao__container"> 
+            <p id="introducao__informacao">Conheça o aplicativo</p>
+        </div>
+    </div>
+
+    <div id="sobre">
+        <div id="sobre__divider"></div>
+        <div id="divider-01"></div>
+        <p id="sobre__subtitulo">Sobre</p>
+        <h2 id="sobre__titulo">Home Beer, um aplicativo de cerveja artesanal</h2>
+       <div id="sobre__container">
+           <p id="sobre__descricao">Olá! Aqui, você tem um universo de vantagens e desfruta de experiências inesquecíveis em diversas cervejas artesanais.</p>
+        </div>
+    </div>
+
+    <div id="comentarios">
+        <div id="comentarios__aspas"></div>
+        <p id="comentarios__titulo">A melhor plataforma de cervejas artesanais</p>
+        <p id="comentarios__pessoa">Leandro Roger</p>
+    </div>
+
+    <div id="ferramentas">
+       <div id="ferramentas__container-01">
+          <div id="divider-02"></div>
+          <h2 id="ferramentas__titulo-principal">Nossas ferramentas</h2>
+          <h3 id="ferramentas__subtitulo">Conheça as especialidades da cervejaria</h3>
+       </div>
+        <div id="ferramentas__container-02">
+            <div id="ferramentas__cervejaria">
+                <div class="ferramentas__icone-01"></div>
+                <h2 class="ferramentas__titulo">Cervejaria</h2>
+                <p class="ferramentas__descricao">Uma cervejaria virtual onde as pessoas conseguem achar cervejas artesanais da melhor qualidade.</p>
+            </div>
+            <div id="ferramentas__comentarios">
+                <div class="ferramentas__icone-02"></div>
+                <h2 class="ferramentas__titulo">Comentarios</h2>
+                <p class="ferramentas__descricao">A plataforma terá suporte para atender comentários, sugestões e dúvidas, através de um Chatboot</p>
+            </div>
+            <div id="ferramentas__parceiros">
+                <div class="ferramentas__icone-03"></div>
+                <h2 class="ferramentas__titulo">Parceiros</h2>
+                <p class="ferramentas__descricao">A cervejaria terá diversos parceiros aliados, disponibilizando todos seus produtos na plataforma.</p>
+            </div>
+            <div id="ferramentas__favoritos">
+                <div class="ferramentas__icone-04"></div>
+                <h2 class="ferramentas__titulo">Favoritos</h2>
+                <p class="ferramentas__descricao">No aplicativo você poderá marcar parceiros aliados como favoritos, para conseguir pedir nos lugares preferidos.</p>
+            </div>
+        </div>
+     </div>
+
+    <div class="container__ilustracoes">
+        <div class="margem-lateral-esquerda">
+            <div class="quadrado-1"></div>
+            <div class="quadrado-2"></div>
+        </div>
+        <div class="conteiner-central">
+            <div id="ilustracoes__container-01">
+                <h2 id="ilustracoes__titulo">Ilustrações</h2>
+                <p id="ilustracoes__descricao">Alguns spoilers da cervejaria</p>
+            </div>
+            <div id="ilustracoes__container-02">
+                <div id="ilustracoes__foto-01"></div>
+                <div id="ilustracoes__foto-02"></div>
+                <div id="ilustracoes__foto-03"></div>
+            </div>
+        </div>  
+        <div class="margem-lateral-direita">
+            <div class="quadrado-1"></div>
+            <div class="quadrado-2"></div>
+        </div>
+    </div>
+
+    <div class="autores">
+        <div id="autores__container-01">
+            <div id="autores__divider"></div>
+            <h2 id="autores__titulo">Conheça os desenvolvedores</h2>
+            <h3 id="autores__subtitulo">Os desenvolvedores da cervejaria virtual</h3>
+            <p id="autores__descricao-01">Somos um grupo de estudantes de em busca de utilizar a tecnologia como meio de ajudar de alguma forma, além de estarmos sempre em busca de desafios para o nosso aperfeiçoamento pessoal em grupo. O exemplo mais claro é o desenvolvimento do Home Beer, além do trabalho em equipe e o nosso aperfeiçoamento individual no desenvolvimento, estamos criando um projeto na qual vai beneficiar muitas pessoas.</p>
+        </div> 
+        <div class="autores__container-02">
+            <div id="autores__loran">
+                <div id="autores__foto-01"></div>
+                <p id="autores__nome-01">Loran Henrique</p>
+            </div>
+            <div id="autores__vitor">
+                <div id="autores__foto-02"></div>
+                <P id="autores__nome-02">Vitor Hugo</P>
+            </div>
+        </div>
+        <div id="autores__container-03">
+            <div id="autores__icone"></div>
+            <p id="autores__descricao-02">Home Beer</p>
+        </div>
+    </div>
+    <div id="rodape">
+        <p id="rodape__copyright"> © Copyright - Home Beer </p>
+    </div>
+</body>
+</html>
